@@ -10,9 +10,13 @@ public class JavaStack {
     static boolean isBallanced(String paranString)
     {
         List<String>closingParan =  Arrays.asList("}", ")", "]");
+		
         boolean isBallanced = true;
+		
         ArrayList<String> stack = new ArrayList<String>();
+		
         if(paranString.length()>0){
+			
             for(int i = 0;i<paranString.length();i++){
                 String paran = paranString.substring(i,i+1); 
                 if(stack.size() == 0 && closingParan.contains(paran)){

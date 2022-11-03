@@ -18,7 +18,9 @@ public class JavaStack {
         if(paranString.length()>0){
 			
             for(int i = 0;i<paranString.length();i++){
+				
                 String paran = paranString.substring(i,i+1); 
+				
                 if(stack.size() == 0 && closingParan.contains(paran)){
                     isBallanced=false;
                     break;
